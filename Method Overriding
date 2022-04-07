@@ -1,0 +1,31 @@
+package Omar;
+//SUPERKEYWORD AND METHOD OVERRIDING by VICTORIA
+// SuperClass
+class Hospital {
+  //Heres the super-class or 'parent' part of the method overriding
+  void display() {
+      System.out.println("Thank you for visitng Healthy and Happy Urgent Care!");
+  }
+}
+
+//SubClass or 'child'
+class Patient extends Hospital {
+  //
+  //This method overrides the Hospital display() method 
+  @Override
+  void display() {
+      super.display(); //Use of Super  Keyword
+      System.out.println("Please ensure the patient filling out the information is over "
+      		+ "18");
+  }
+}
+//super-class and subclass have same parameters& return type 
+//subclass overrides the super-class
+public class MethodOverriding5 {
+  public static void main(String args[])
+  {
+      Hospital patientObject = new Patient(); 
+      patientObject.display();
+  }
+}
+//ADD THIS TO WELCOME MESSAGE
