@@ -1,0 +1,48 @@
+package Omar;
+
+import java.util.Scanner; // Needed for the Scanner class
+
+//SWICTH STATEMENTS by VICTORIA
+public class DoctorChoice
+{
+   public static void main(String[] args)
+   {
+      int doctor;    // to hold day value
+
+      // Create a Scanner object for keyboard input.
+      Scanner console = new Scanner(System.in);
+
+      // Get the doctor type.
+      System.out.print("Please enter the number corresponding with the doctor you need: ");
+      System.out.print("1: Urologist 2: Chiropractic 3: optometrist 4: Orthopedic");
+      doctor = console.nextInt();
+
+      // Print out the department for the bill
+      switch (doctor)
+      {
+      case 1 :
+         System.out.println("You selected the urology department");
+
+         break;
+
+      case 2 :
+         System.out.println("You selected the chiropractic department");
+
+         break;
+
+      case 3 :
+         System.out.println("You selected the optometry department");
+
+         break;
+
+      case 4 :
+         System.out.println("You selected the orthopedic department");
+
+         break;
+//This line will print if the user does not input one of the 4 dr choices
+      default :
+         System.out.println("Invalid input");
+      }
+   }
+}          
+//ADD THIS TO DOCTOR CHOICE SECTION
