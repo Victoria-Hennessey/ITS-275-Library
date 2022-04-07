@@ -1,0 +1,32 @@
+package Omar; 
+//DATE LIBRARIES REQUIRMENT 
+//DATE LIBRARY BY VICTORIA
+import java.util.*;
+public class GregorianCalendarDemo {
+
+	//uses public class from libraries to get date
+   public static void main(String args[]) {
+      String months[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", 
+         "Oct", "Nov", "Dec"};
+      
+      int year;
+      // Gregorian calendar initialized with current date/time of where user is
+      // Gregorian calendar is a solar dating system used globally (works for any country)
+      
+      
+      GregorianCalendar gcalendar = new GregorianCalendar();
+      
+      // Display current time and date information for location of patient
+      System.out.print("Date: ");
+      System.out.print(months[gcalendar.get(Calendar.MONTH)]);
+      System.out.print(" " + gcalendar.get(Calendar.DATE) + " ");
+      System.out.println(year = gcalendar.get(Calendar.YEAR));
+      System.out.print("Time: ");
+      System.out.print(gcalendar.get(Calendar.HOUR) + ":");
+      System.out.print(gcalendar.get(Calendar.MINUTE) + ":");
+      System.out.println(gcalendar.get(Calendar.SECOND));
+
+      }
+   }
+//ADD THIS TO WELCOME MESSAGE OR THE ITEMIZED BILL AT THE END
+
